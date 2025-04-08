@@ -1,0 +1,314 @@
+@import url('https://fonts.google.com/specimen/Young+Serif');
+@import url('https://fonts.google.com/specimen/Outfit');
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.inner {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 740px;
+    justify-content: center;
+}
+
+header {
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+    flex-flow: column;
+}
+
+h1 {
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: flex-start;
+}
+
+.pHeader {
+    font-size: 16px;
+    font-family: "Young Serif", sans-serif;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: "Young Serif";
+    font-weight:bolder;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    font-size: 16px;
+    font-family: "Young Serif", sans-serif;
+}
+
+.prepList {
+    display:list-item;
+    font-size: 16px;
+    text-indent: 3.5rem;
+    list-style: none;
+    justify-content:space-between;
+
+}
+
+.prepListItem::before {
+    content: '•';
+    color: black;
+    display: inline-block;
+    padding-right: 2.5rem;
+    margin-left: -5rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients::after {
+    content: "";
+    display: block;
+    border-top: 1px solid grey;
+    opacity: 60%;
+    margin: 0;
+}
+
+.ingredientsList {
+    display:list-item;
+    font-family: "Young Serif", sans-serif;
+    font-size: 16px;
+    text-indent: 2rem;
+    list-style: none;
+    justify-content:space-between;    
+}
+
+.ingredientsListItem::before {
+    content: '•';
+    color: black;
+    display: inline-block;
+    padding-right: 2.5rem;
+    margin-left: -3.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+.instructions::after {
+    content: "";
+    display: block;
+    border-top: 1px solid grey;
+    opacity: 60%;
+    margin: 0.25rem;
+}
+
+.instructionsList {
+    display:list-item;
+    font-size: 16px;
+    justify-content:space-between; 
+    padding-left: 1.25rem;
+}
+
+.instructionsListItem {
+    padding-left: 2rem;
+    padding-bottom: 1.25rem;
+    font-family: "Young Serif", sans-serif;
+    font-size: 16px;
+}
+
+.instructionsListItem::marker {
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.pNutrition {
+    padding-bottom: 1.5rem;
+    font-size: 16px;
+    font-family: "Young Serif", sans-serif;
+}
+
+.nutritionTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    font-family: "Young Serif", sans-serif;
+    font-size: 16px;
+}
+
+.nutritionTable td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+
+.verb {
+    font-weight: normal;
+}
+
+.facts {
+    font-weight: bolder;
+    color: hsl(14, 45%, 36%);
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* /* /* || SMALL */
+@media screen and (min-width: 576px) {
+    body {
+        margin: 5rem 1.5rem;
+      }
+    
+      .inner {
+        padding: 2rem;
+        border-radius: 18px;
+      }
+    
+      h1 {
+        font-size: 2rem;
+      }
+    
+      .instructionsListItem,
+      .ingredientsListItem,
+      .prepListItem {
+        font-size: 17px;
+      }
+  }
+  
+  /* || MEDIUM */
+  @media screen and (min-width: 768px) {
+    .inner {
+        padding: 2.5rem 3rem;
+      }
+    
+      h1 {
+        font-size: 2.2rem;
+      }
+    
+      .prepList {
+        text-indent: 2.5rem;
+      }
+    
+      .ingredientsList {
+        text-indent: 1.5rem;
+      }
+    
+      .nutritionTable td {
+        padding: 20px;
+      }
+  }
+  
+  /* || LARGE */
+  @media screen and (min-width: 992px) {
+    body {
+        margin: 6rem 2rem;
+      }
+    
+      .inner {
+        max-width: 860px;
+        padding: 3rem 4rem;
+      }
+    
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.4;
+      }
+    
+      .pHeader,
+      .instructionsListItem,
+      .ingredientsListItem,
+      .prepListItem {
+        font-size: 18px;
+      }
+    
+      .nutritionTable {
+        font-size: 17px;
+      }    
+  }
+  
+  /* || XL  */
+  @media screen and (min-width: 1200px) {
+    .inner {
+        max-width: 980px;
+        padding: 3.5rem 5rem;
+      }
+    
+      h1 {
+        font-size: 2.75rem;
+      }
+    
+      .pHeader {
+        font-size: 19px;
+      }
+    
+      .nutritionTable td {
+        font-size: 18px;
+      }    
+  }
+  
+  /* || MOBILE DEVICE LANDSCAPE  */
+  @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        margin: 2rem 1rem;
+      }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .inner {
+    padding: 1rem;
+    }
+
+    h1 {
+    font-size: 1.5rem;
+    }
+
+    .pHeader,
+    .instructionsListItem,
+    .prepListItem {
+    font-size: 15px;
+    }
+
+    .nutritionTable {
+    font-size: 15px;
+    }
+  }
