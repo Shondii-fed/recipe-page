@@ -87,8 +87,8 @@ h3 {
     content: '•';
     color: black;
     display: inline-block;
-    padding-right: 2.5rem;
-    margin-left: -5rem;
+    padding-right: 1rem;
+    margin-left: -1.5rem;
     padding-bottom: 1.5rem;
     justify-content: space-between;
 }
@@ -120,8 +120,8 @@ h2 {
     content: '•';
     color: black;
     display: inline-block;
-    padding-right: 2.5rem;
-    margin-left: -3.5rem;
+    padding-right: 1rem;
+    margin-left: -1.5rem;
     padding-bottom: 1.5rem;
     justify-content: space-between;
 }
@@ -135,14 +135,13 @@ h2 {
 }
 
 .instructionsList {
-    display:list-item;
     font-size: 16px;
     justify-content:space-between; 
     padding-left: 1.25rem;
 }
 
 .instructionsListItem {
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-bottom: 1.25rem;
     font-family: "Young Serif", sans-serif;
     font-size: 16px;
